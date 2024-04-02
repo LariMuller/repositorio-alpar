@@ -48,7 +48,8 @@ html,body{
     margin-bottom: 20px;
     text-decoration: none;
 }
-.menu a.selected{
+.menu a.selected,
+.menu a:hover{
     color:#CCB89D;
     font-size: 25px;
     opacity: 1;
@@ -112,4 +113,9 @@ section.descricao p{
     border-radius: 50%;
     width: 50px;
     line-height: 40px;
+}
+.desenho{
+    margin: 25px;
+    width: 350px;
+    border-radius: 50%;
 }
