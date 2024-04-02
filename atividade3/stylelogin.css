@@ -36,7 +36,7 @@ div.inputbox{
     border-bottom: 3px solid #CCB89D;
 }
 
-div.inputbox label{
+.inputbox label{
     position: absolute;
     top: 50%;
     left: 5px;
