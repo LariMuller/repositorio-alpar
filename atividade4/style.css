@@ -103,9 +103,12 @@ body{
 
 }
 hr{
-    border-top: 5px solid #D5815B;
+    border-top: 2px solid #D5815B;
+    margin: 10px;
 }
-.sobre{
+.sobre-podcast{
+    margin: 10px;
+    padding: 10px;
     margin-bottom: 30px;
 }
 .video{
@@ -121,4 +124,15 @@ hr{
 }
 .episode{
     padding: 10px;
+}
+.sobre-mim{
+    margin: 10px;
+    padding: 10px;
+}
+.sobre-mim h2{
+    margin-bottom: 10px;
+}
+.sobre-mim li{
+    list-style-position: inside;
+    list-style-type: circle ;
 }
