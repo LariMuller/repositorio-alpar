@@ -4,19 +4,17 @@
     box-sizing: border-box;
     font-family: Georgia, Times, 'Times New Roman', serif;
 }
-
 a,
 button {
 font-family: inherit;
 cursor: pointer;
 color: currentColor;
 }
-
 input, textarea, select {
     font-family: inherit;
     color: currentColor;
 }
-    
+ 
 html, body{
     background-color:#6F734F;
     height: 100vh;
@@ -65,7 +63,6 @@ body{
     min-width: 250px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-
 }
 .menu-itens a{
     padding: 12px 16px;
@@ -91,16 +88,13 @@ body{
     border-radius: 15px;
     overflow-y: scroll;
     color: #412E27;
-
 }
 .page::-webkit-scrollbar {
     display: none;
 }
-
 .content{
     margin: 20px;
     font-size: 20px;
-
 }
 hr{
     border-top: 2px solid #D5815B;
@@ -125,6 +119,9 @@ hr{
 .episode{
     padding: 10px;
 }
+.audio{
+    margin: 20px 15px 0px;
+}
 .sobre-mim{
     margin: 10px;
     padding: 10px;
@@ -135,4 +132,22 @@ hr{
 .sobre-mim li{
     list-style-position: inside;
     list-style-type: circle ;
+}
+.redes{
+    margin: 10px;
+    padding: 10px;
+}
+.redes img{
+    width: 100px;
+    border-radius: 50px;
+}
+.links{
+    display: flex;
+}
+.redes a{
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
