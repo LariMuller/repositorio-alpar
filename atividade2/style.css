@@ -11,16 +11,55 @@ button {
     cursor: pointer;
     color: currentColor;
     text-decoration: none;
+    border: none;
+    background: none;
 }
 input, textarea, select {
     font-family: inherit;
     color: currentColor;
 }
 html, body{
-    background-color:#D5815B;
+    background-color:#5D2410;
     height: 100vh;
     width: 100vw;
+    overflow: hidden;
 }
-ul{
-    list-style-position: inside ;
+body{
+    display: grid;
+    grid-template-rows: 20% 80% ;
+    grid-template-areas: 'header' 'content';
+}
+.header{
+    grid-area: header;
+    margin: 15px;
+    padding: 20px;
+    background-color: #EADECE;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content{
+    grid-area: content;
+    margin: 0px 15px 15px;
+    background-color: #EADECE;
+    border-radius: 20px;
+    overflow: scroll;
+    padding: 25px;
+}
+.header img{
+    width: 90px;
+    border-radius: 50px;
+}
+
+hr{
+    border-top: 2px solid #7F6044;
+    margin: 30px;
+}
+
+ul, ol{
+    margin: 15px;
+}
+ol > li{
+text-align: center;
 }
