@@ -54,18 +54,19 @@ body{
     justify-content: space-evenly;
 }
 li{
-    list-style-position: inside;
+    list-style: none;
 }
 .lista{
     margin: 15px;
     padding: 15px;
+    display: block;
 }
 .lista:hover{
     background-color: #ccb89dbb;
     border-radius: 15px;
     box-shadow: 5px 5px #86786570;
 }
-.lista:hover a{
+.lista:hover h2{
     color: #5D2410;
     text-decoration: underline;
 }
