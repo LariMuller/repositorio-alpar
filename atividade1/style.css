@@ -5,12 +5,6 @@
     font-family: Georgia, Times, 'Times New Roman', serif;
     color: #412E27;
 }
-a{
-    font-family: inherit;
-    cursor: pointer;
-    color: currentColor;
-    text-decoration: none;
-}
 input, textarea, select {
     font-family: inherit;
     color: currentColor;
@@ -21,13 +15,19 @@ html, body{
     width: 100vw;
     overflow: hidden;
 }
+a{
+    font-family: inherit;
+    cursor: pointer;
+    color: currentColor;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 15px;
+}
 body{
     display: grid;
     grid-template-areas: 'header' 'content';
     grid-template-rows: 10% 90%;
-}
-img{
-    width: 400px;
 }
 .header{
     grid-area: header;
@@ -46,8 +46,32 @@ img{
     padding: 15px;
     background-color: #EADECE;
     border-radius: 10px;
+    font-size: 18px;
+    text-align: justify;
 }
 .introduction{
     font-size: 20px;
     font-weight: 700;
+    padding: 10px;
+}
+.content img{
+    width: 400px;
+    margin: 25px auto;
+    border-radius: 30px;
+    box-shadow: 5px 5px #86786570;
+    display: flex;
+}
+.content h2{
+    text-align: center;
+    text-decoration: underline;
+}
+.content p{
+    text-indent: 15px;
+}
+hr{
+    border-top: 2px solid #5D2410;
+    margin: 10px;
+}
+.content::-webkit-scrollbar {
+    display: none;
 }
