@@ -13,16 +13,28 @@
     <div class="header">
         <img src="logo.png" alt="logotipo do Café Delícia">
         <h1>Café Delícia - Cardápio</h1>
-        <button><img src="menu-button.png"></button>
+        <div class="menu">
+            <button class="menu-button"><img src="menu-button.png"></button>
+            <div class="menu-itens">
+                <a href="../">Página Inicial</a>
+                <a href="#cafes">Cafés</a>
+                <a href="#sanduiches">Sanduíches</a>
+                <a href="#bolos">Bolos</a>
+                <a href="#tortas">Tortas</a>
+                <a href="#bebidas">Bebidas</a>
+                <a href="#tabela">Horário de Funcionamento</a>
+                <a href="#footer">Redes Sociais</a>
+            </div>
+        </div>
     </div>
     <div class="content">
-        <div class="introduction">
+        <div class="introduction" id="introduction">
             <p>Venha conhecer o Café Delicia, com o café mais gostoso que você irá provar na vida!</p>
             <p>Além dos nossos variados tipos de café, temos muitas outras Delícias, não perca tempo e prove todos os itens do nosso cardápio.</p>
         </div>
         <div class="cardapio">
             <ol>
-                <li> <h2>Cafés</h2> </li>
+                <li id="cafes"> <h2>Cafés</h2> </li>
                     <ul>
                         <li> <h3>Café Tradicional</h3> </li>
                         <p>Feito com grãos selecionados e passado no filtro para um sabor encorpado. </p>
@@ -60,7 +72,7 @@
                         <p>Café tradicionalmente preparado e servido com gelo, proporcionando uma experiência refrescante e revigorante.</p>
                         <span>R$5,00</span>
                     </ul>
-                <li> <h2>Sanduíches</h2> </li>
+                <li id="sanduiches"> <h2>Sanduíches</h2> </li>
                     <ul>
                         <li> <h3>Queijo Quente</h3> </li>
                         <p>Pão artesanal com mix de queijos brasileiros.</p>
@@ -82,7 +94,7 @@
                         <p>Pão artesanal, mix de queijos brasileiros, calabresa, cebola caramelizada e rúcula.</p>
                         <span>R$16,00</span>
                     </ul>
-                <li> <h2>Bolos (Em Pedaços)</h2> </li>
+                <li id="bolos"> <h2>Bolos (Em Pedaços)</h2> </li>
                     <ul>
                         <li> <h3>Bolo de Cenoura</h3> </li>
                         <p>Bolo de cenoura fofinho coberto com chocolate cremoso.</p>
@@ -104,7 +116,7 @@
                         <p>Bolo aromático e fresco feito com suco e raspas de laranja.</p>
                         <span>R$6,50</span>
                     </ul>
-                <li> <h2>Tortas (Em Pedaços)</h2> </li>
+                <li id="tortas"> <h2>Tortas (Em Pedaços)</h2> </li>
                     <ul>
                         <li> <h3>Torta de Morango</h3> </li>
                         <p>Torta com morangos frescos e recheio cremoso.</p>
@@ -126,7 +138,7 @@
                         <p>Torta recheada com frango suculento e massa dourada.</p>
                         <span>R$6,00</span>
                     </ul>
-                <li> <h2>Bebibas</h2> </li>
+                <li id="bebidas"> <h2>Bebibas</h2> </li>
                     <ul>
                         <li> <h3>Sucos naturais (400 ml)</h3> </li>
                         <p> Opções: Abacaxi, Goiaba, Laranja, Limão, Manga, Maracujá.</p>
@@ -144,14 +156,14 @@
         </div>
 
     <hr>
-        <div class="tabela">
-            <table border="1" cellspacing="0" cellpadding="8">
-                <thead>
-                    <tr>
-                        <th colspan="7">
-                            <h2>Horário de Funionamento:</h2>
-                        </th>
-                    </tr>
+    <div class="tabela" id="tabela">
+        <table border="1" cellspacing="0" cellpadding="8">
+            <thead>
+                <tr>
+                    <th colspan="7">
+                        <h2>Horário de Funionamento:</h2>
+                    </th>
+                </tr>
                     <tr>
                         <th>Segunda-Feira</th>
                         <th>Terça-Feira</th>
@@ -169,38 +181,39 @@
                     </tr>
                 </tbody>
             </table>
-        
-        </div> <!-- tabela -->
-        
+        </div>
     <hr>
-        <div class="footer">
+
+        <div class="footer" id="footer">
             <p>
                 <a href="https://www.google.com/maps/place/R.+Alian%C3%A7a+Liberal,+639+-+Bela+Alian%C3%A7a,+S%C3%A3o+Paulo+-+SP,+05088-000/"
                 target="_blank">
-                <img src="cafedelicia.jpg" alt="link para a localização"> Rua Aliança Liberal, 639, Bela Aliança CEP 05088-000, São Paulo - SP
+                <img src="localizacao.png" alt="link para a localização">
                 </a>
             </p>
             <p>
-                <img src="telefone.jpg" alt="telefone para contato"> (11) 3644-5057
+                <a href="https://www.google.com/search?q=telefone+alpar">
+                <img src="telefone.jpg" alt="telefone para contato">
+                </a>
             </p>
             <p>
                 <a href="https://www.instagram.com/alpar_br/" target="_blank">
-                <img src="instagram.png" alt="link para o Instagram"> Instagram
+                <img src="instagram.png" alt="link para o Instagram">
                 </a>
             </p>
             <p>
                 <a href="https://www.facebook.com/alparbr/" target="_blank">
-                <img src="facebook.jpg" alt="link para o Facebook"> Facebook
+                <img src="facebook.jpg" alt="link para o Facebook">
                 </a>
             </p>
             <p>
                 <a href="https://www.linkedin.com/company/alparbr" target="_blank">
-                <img src="linkedin.png" alt="link para o Linkedin"> Linkedin
+                <img src="linkedin.png" alt="link para o Linkedin">
                 </a>
             </p>
         </div>
     <hr>                   
-    <p><a href="../">Voltar para o Topo</a></p>
+    <p><a class="goup" href="#introduction">Voltar para o Topo</a></p>
     </div> <!-- content -->
 </body>
 
