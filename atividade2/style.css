@@ -154,3 +154,29 @@ th, tr, td{
         width: 70px;
     }
 }
+@media (max-width: 470px) {
+    .header{
+        font-size: 12px;
+    }    
+    .tabela{
+        overflow-x: scroll;
+        justify-content: unset;
+    }
+    .tabela::-webkit-scrollbar {
+        display: none;
+    }
+    .footer{
+        margin: 0;
+    }
+    .footer img{
+        width: 60px;
+    }
+}
+@media (max-width: 370px) {
+    .header{
+        font-size: 10px;
+    }   
+    .footer img{
+        width: 50px;
+    }
+}
