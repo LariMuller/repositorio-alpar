@@ -25,6 +25,7 @@ body{
     display: grid;
     grid-template-areas: 'header' 'content' 'footer';
     grid-template-rows: 10% 75% 15%;
+    overflow: hidden;
 }
 .header{
     grid-area: header;
@@ -79,4 +80,33 @@ li{
     background-color: #ccb89dbb;
     border-radius: 15px;
     border-bottom: 5px solid #86786570;
+}
+@media (max-width: 700px){
+    .header{
+        font-size: 80%;
+    }
+}
+@media (max-width: 550px) {
+    .header{
+        font-size: 70%
+    }
+    .content{
+        font-size: 90%;
+    }
+    .footer img{
+        width: 60px;
+    }
+}
+@media (max-width: 465px) {
+    .header{
+        font-size: 60%;
+    }    
+    .content{
+        font-size: 80%;
+    }
+}
+@media (max-width: 400px) {
+    .header{
+        font-size: 50%;
+    }
 }
