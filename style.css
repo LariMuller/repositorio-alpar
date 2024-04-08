@@ -18,7 +18,7 @@ input, textarea, select {
 }
 html, body{
     background-color:#D5815B;
-    min-height: 100vh;
+    min-height: -webkit-fill-available;
     width: 100vw;
 }
 body{
@@ -36,6 +36,7 @@ body{
     align-items: center;
     justify-content: center;
     border-radius: 15px;
+    text-align: center;
 }
 .header h1{
     color:#5D2410;
