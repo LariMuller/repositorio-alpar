@@ -20,7 +20,7 @@ input, textarea, select {
 }
 html, body{
     background-color:#5D2410;
-    height: 100vh;
+    height: 100svh;
     width: 100vw;
     overflow: hidden;
 }
@@ -38,6 +38,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-align: center;
     font-size: 25px;
 }
 .content{
@@ -48,6 +49,7 @@ body{
     overflow: scroll;
     padding: 25px;
     font-size: 20px; 
+    text-align: justify;
 }
 .header img{
     width: 90px;
@@ -76,7 +78,7 @@ th, tr, td{
 .footer{
     display: flex;
     justify-content: space-between;
-    margin: 40px;
+    margin: 30px;
     padding: 10px;
 }
 .footer img{
@@ -86,9 +88,6 @@ th, tr, td{
 .goup:hover{
     text-decoration: underline;
 }
-/* .menu{
-    display: inline-block;
-} */
 .menu-itens{
     display: none;
     position: absolute;
@@ -115,4 +114,43 @@ th, tr, td{
 }
 .content::-webkit-scrollbar {
     display: none;
+}
+@media (max-width:860px) {
+    .header{
+        font-size: 20px;
+    }
+    .header img{
+        width: 80px;
+    }
+}
+@media (max-width: 740px) {
+    .header{
+        font-size: 15px;
+    }    
+    .header img{
+        width: 70px;
+    }
+    .tabela{
+        font-size: 70%;
+    }
+    .footer img{
+        width: 80px;
+    }
+}
+@media (max-width: 575px) {
+    .header{
+        font-size: 12px;
+    }    
+    .tabela{
+        font-size: 65%;
+    }
+    th, tr, td{
+        padding: 5px;
+    }
+    .footer{
+        margin: 15px;
+    }
+    .footer img {
+        width: 70px;
+    }
 }
