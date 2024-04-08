@@ -11,7 +11,7 @@ input, textarea, select {
 }
 html, body{
     background-color:#6F734F;
-    height: 100svh;
+    min-height: 100svh;
     width: 100vw;
     overflow: hidden;
 }
