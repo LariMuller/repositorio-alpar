@@ -18,7 +18,7 @@ input, textarea, select {
 }
 html, body{
     background-color:#D5815B;
-    min-height: -webkit-fill-available;
+    min-height: 100svh;
     width: 100vw;
 }
 body{
@@ -46,6 +46,10 @@ body{
     margin: 10px;
     background-color: #EADECE;
     border-radius: 15px;
+        overflow: scroll;
+    }
+.content::-webkit-scrollbar {
+    display: none;
 }
 .footer{
     grid-area: footer;
@@ -86,12 +90,6 @@ li{
 @media (max-width: 900px){
     .header{
         font-size: 85%;
-    }
-    .content{
-        overflow: scroll;
-    }
-    .content::-webkit-scrollbar {
-        display: none;
     }
     .footer img{
         width: 70px;

@@ -11,7 +11,7 @@ input, textarea, select {
 }
 html, body{
     background-color:#6F734F;
-    height: 100vh;
+    height: 100svh;
     width: 100vw;
     overflow: hidden;
 }
@@ -74,4 +74,30 @@ hr{
 }
 .content::-webkit-scrollbar {
     display: none;
+}
+@media (max-width:500px) {
+    body{
+        font-size: 85%;
+    }
+    .content img{
+        width: 85%;
+    }
+}
+@media (max-width:450px) {
+    body{
+        font-size: 70%;
+    }
+    .content img{
+        width: 75%;
+    }
+}
+@media (max-width:400px) {
+    body{
+        font-size: 65%;
+    }
+}
+@media (max-width:365px) {
+    body{
+        font-size: 60%;
+    }
 }
