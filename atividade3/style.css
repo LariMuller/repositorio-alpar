@@ -186,7 +186,7 @@ section.descricao p{
         padding: 3%;
     }
     .icons-social a{
-        margin: 0 4px;
+        margin: 0 3px;
     } 
     .icons-social img{
         width: 45px;
@@ -195,9 +195,9 @@ section.descricao p{
         width: 150px;
     }
     .menu a{
-        font-size: 18px;
+        font-size: 17px;
     }
     .menu a.selected{
-        font-size: 20px;
+        font-size: 19px;
     }
 }
