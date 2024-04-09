@@ -152,11 +152,11 @@ section.descricao p{
     .menu a.selected{
         font-size: 22px;
     }
+    .desenho{
+        width: 280px;
+    }
 }
 @media (max-width: 500px) {
-    section.descricao h2{
-        font-size: 38px;
-    }
     .sidebar {
         width: 32%;
     }
@@ -164,8 +164,14 @@ section.descricao p{
         width: 68%;
         left: 32%;
     }
+    section.descricao h2{
+        font-size: 38px;
+    }
     .icons-social a{
         margin: 0 10px;
+    }
+    .desenho{
+        width: 200px;
     }
 }
 @media (max-width: 400px) {
@@ -184,5 +190,14 @@ section.descricao p{
     } 
     .icons-social img{
         width: 45px;
+    }
+    .desenho{
+        width: 150px;
+    }
+    .menu a{
+        font-size: 18px;
+    }
+    .menu a.selected{
+        font-size: 20px;
     }
 }
