@@ -47,6 +47,7 @@ html,body{
     display: block;
     margin-bottom: 20px;
     text-decoration: none;
+    font-size: 24px;
 }
 .menu a.selected,
 .menu a:hover{
@@ -56,6 +57,7 @@ html,body{
     display: block;
     margin-bottom: 20px;
     text-decoration: none;
+    font-size: 26px;
 }
 
 .content{
@@ -64,8 +66,8 @@ html,body{
     width: 80%;
     height: 100%;
     background: #EADECE;
-    overflow-y: auto;
-    padding: 0 3%;
+    padding: 3% 10% 3% 3%;
+
 }
 
 
@@ -74,7 +76,6 @@ section.descricao{
     top: 50%;
     transform: translateY(-50%);
 }
-
 
 section.descricao h2{
     color: #412E27;
@@ -118,4 +119,70 @@ section.descricao p{
     margin: 25px;
     width: 350px;
     border-radius: 50%;
+}
+@media (max-width: 850px) {
+    .sidebar {
+        width: 25%;
+    }
+    .content{
+        width: 75%;
+        left: 25%;
+    }
+}
+@media (max-width: 650px) {
+    .sidebar {
+        width: 30%;
+    }
+    .content{
+        width: 70%;
+        left: 30%;
+    }
+    section.descricao h2{
+        font-size: 40px;
+    }
+    section.descricao h3{
+        font-size: 20px;
+    }
+    section.descricao p{
+        font-size: 18px;
+    }
+    .menu a{
+        font-size: 20px;
+    }
+    .menu a.selected{
+        font-size: 22px;
+    }
+}
+@media (max-width: 500px) {
+    section.descricao h2{
+        font-size: 38px;
+    }
+    .sidebar {
+        width: 32%;
+    }
+    .content{
+        width: 68%;
+        left: 32%;
+    }
+    .icons-social a{
+        margin: 0 10px;
+    }
+}
+@media (max-width: 400px) {
+    .sidebar {
+        width: 35%;
+    }
+    .content{
+        width: 65%;
+        left: 35%;
+    }
+    section.descrição{
+        padding: 3%;
+    }
+    .icons-social a{
+        margin: 0 4px;
+    } 
+    .icons-social img{
+        width: 45px;
+    }
 }
