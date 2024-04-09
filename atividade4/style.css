@@ -37,14 +37,18 @@ body{
 }
 .title{
     margin: 15px;
+    margin-right: 0px;
     padding: 15px;
+    padding-right: 0px;
     font-weight: 600;
     color: #412E27;
 }
 .menu{
     position: relative;
     margin: 15px;
+    margin-left: 0px;
     padding: 15px;
+    padding-left: 0px;
     display: inline-block;
 }
 .menu-button{
@@ -92,9 +96,10 @@ body{
 .page::-webkit-scrollbar {
     display: none;
 }
-.content{
+.content p{
     margin: 20px;
     font-size: 20px;
+    text-align: justify;
 }
 hr{
     border-top: 2px solid #D5815B;
@@ -106,9 +111,13 @@ hr{
     margin-bottom: 30px;
 }
 .video{
+    margin: 20px;
     display: flex;
     justify-content: center;
-    margin: 20px;
+}
+.video-sizing{
+    height: 90%;
+    width: 90%;
 }
 .episode-list{
     display: flex;
@@ -156,4 +165,53 @@ hr{
     text-decoration: underline;
     background-color: #CCB89D;
     border-radius: 20px;
+}
+@media (max-width:610px) {
+    .title{
+        font-size: 16px
+    }
+}
+@media (max-width:500px) {
+    .title{
+        font-size: 14px;
+    }
+}
+@media (max-width: 475px) {
+    .title{
+        font-size: 12px;
+    }
+    .video{
+        margin: 20px 0px
+    }
+    .menu{
+        font-size: 15px;
+    }
+    .menu-itens{
+        min-width: 180px;
+    }
+    .menu-button{
+        width: 40px;
+    }
+    .content{
+        font-size: 16px;
+    }
+    .links img{
+        width: 80px;
+    }
+    .links {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 400px) {
+    .audio{
+        margin: 10px 0px 20px;
+    }   
+     .links img{
+        width: 65px;
+    }
+    .links a{
+        padding: 10px;
+        text-indent: -9999px;
+    }
 }
