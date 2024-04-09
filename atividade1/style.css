@@ -11,9 +11,8 @@ input, textarea, select {
 }
 html, body{
     background-color:#6F734F;
-    min-height: 100svh;
+    min-height: 100vh;
     width: 100vw;
-    overflow: hidden;
 }
 a{
     font-family: inherit;
@@ -86,6 +85,7 @@ hr{
 @media (max-width:450px) {
     body{
         font-size: 70%;
+        grid-template-rows: 8% 92%;
     }
     .content img{
         width: 75%;
