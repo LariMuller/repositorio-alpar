@@ -26,6 +26,7 @@ body{
     grid-template-areas: 'header' 'content' 'footer';
     grid-template-rows: 10% 75% 15%;
     font-size: 20px;
+    overflow: scroll;
 }
 .header{
     grid-area: header;
@@ -36,6 +37,9 @@ body{
     justify-content: center;
     border-radius: 15px;
     text-align: center;
+}
+.body::-webkit-scrollbar {
+    display: none;
 }
 .header h1{
     color:#5D2410;
