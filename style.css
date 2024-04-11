@@ -38,7 +38,7 @@ body{
     border-radius: 15px;
     text-align: center;
 }
-.body::-webkit-scrollbar {
+body::-webkit-scrollbar {
     display: none;
 }
 .header h1{
