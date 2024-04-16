@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1 - Js Avançado </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="content">
+        <h1> Sistema Bancário</h1>
+        <label>Dinheiro:
+            <input id="money" placeholder="Digite o valor desejado"></label>
+            <div class="buttons">
+                <button class="deposito" onclick="deposito()">Depositar</button>
+                <button class="saque" onclick="saque()">Saque</button>
+            </div>
+        <p>Saldo: R$<span id="valor">0.00</span></p>
+        <p id="msg"></p>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
