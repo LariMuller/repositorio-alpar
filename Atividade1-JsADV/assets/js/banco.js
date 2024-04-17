@@ -1,6 +1,7 @@
 const dinheiroEl = document.getElementById("money")
 const saldoEl = document.getElementById("valor")
-const msgEl = document.getElementById("msg")
+const msgElSucess = document.getElementById("msgSucess")
+const msgElFail = document.getElementById("msgFail")
 
 class Conta {
     saldo;
@@ -9,11 +10,13 @@ class Conta {
     }
     deposito(dinheiro) {
         if (isNaN(dinheiro) || dinheiro <= 0) {
-            msgEl.innerHTML = `Valor inválido.`
+            msgElFail.innerHTML = `Valor inválido.`
+            msgElSucess.innerHTML = ''
         } else {
             this.saldo += dinheiro
-            document.getElementById("valor").innerHTML = this.saldo
-            msgEl.innerHTML = `Depósito realizado com sucesso.`
+            saldoEl.innerHTML = this.saldo
+            msgElSucess.innerHTML = `Depósito realizado com sucesso.`
+            msgElFail.innerHTML = ''
         }
     }
     saque(dinheiro) {
@@ -22,10 +25,12 @@ class Conta {
         } else {
             if (this.saldo >= dinheiro) {
                 this.saldo -= dinheiro
-                document.getElementById("valor").innerHTML = this.saldo
-                msgEl.innerHTML = `Saque realizado com sucesso.`
+                saldoEl.innerHTML = this.saldo
+                msgElSucess.innerHTML = `Saque realizado com sucesso.`
+                msgElFail.innerHTML = ''
             } else {
-                msgEl.innerHTML = `Saldo Insuficiente.`
+                msgElFail.innerHTML = `Saldo Insuficiente.`
+                msgElSucess.innerHTML = ''
             }
         }
     }

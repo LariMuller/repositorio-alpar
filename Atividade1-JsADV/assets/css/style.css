@@ -54,3 +54,11 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
+#msgFail{
+    color: #801f1f;
+    font-weight: bold;
+}
+#msgSucess{
+    color: #22801f;
+    font-weight: bold;
+}
