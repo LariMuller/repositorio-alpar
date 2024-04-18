@@ -1,38 +1,34 @@
 class ControleIluminacao {
     static instance
+    sala = false;
+    cozinha = false;
+    quarto = false;
+    banheiro = false;
     observers = []
-    constructor() {
-        if (!ControleIluminacao.instance) {
-            ControleIluminacao.instance = this;
+
+    toggle(room){
+        if(room == 'sala'){
+            this.sala = this.sala ? false : true
+        } else if (room == "cozinha"){
+            this.cozinha = !this.cozinha
+        } else if (room == "quarto"){
+            this.quarto = !this.quarto
+        } else if (room == "banheiro"){
+            this.banheiro = !this.banheiro
         }
-        return ControleIluminacao.instance
+        
+        this.executar()
     }
 
-    toggle(btnClass){
-        if (btnClass.classList.contains('off')){
-          btnClass.classList.remove('off')  
-          btnClass.classList.add('on')
-          this.executaObservers()
-        }
-         else if (btnClass.classList.contains("on")){
-            btnClass.classList.remove('on')  
-            btnClass.classList.add('off')
-            this.executaObservers()
-        }
+    inscrever(func){
+        this.observers.push(func)
     }
-    registraObserver(observer){
-        this.observers.push(observer)
-    }
-    removeObserver(observer){
-        const index = this.observers.findIndex(func => func == observer)
-        if (index >= 0){
-            this.observers.splice(index, 1)
-        }
-    }
-    executaObservers(){
-        for (let observer of this.observers){
-            observer()
-        }
+
+    executar(){
+        this.observers.forEach((func)=>{
+            func()
+        })
     }
 
 }
+ControleIluminacao.instance = new ControleIluminacao()
