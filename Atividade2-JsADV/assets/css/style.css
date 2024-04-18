@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    color: #000000;
+}
+input, textarea, select {
+    font-family: inherit;
+    color: currentColor;
+}
+html, body{
+    background-color: #351b1b;
+    height: 100vh;
+    width: 100vw;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+.content{
+    width: 90%;
+    height: 80%;
+    margin: 15px;
+    padding: 15px;
+    background-color: #EADECE;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    padding: 20px;
+}
+.comodo{
+    padding: 15px;
+
+}
+.off{
+    background-color: rgb(197, 59, 59);
+    font-size: 18px;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+}
+.on{
+    background-color: green;
+    font-size: 18px;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+}

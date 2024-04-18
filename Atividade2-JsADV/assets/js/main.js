@@ -1,2 +1,7 @@
-const control = new Control()
-const btnStateEl = document.getElementById
+const control = new ControleIluminacao()
+const msgEl = document.getElementsByTagName('span')
+
+function observer() {
+}
+
+control.registraObserver(observer)
