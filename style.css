@@ -48,17 +48,22 @@ body::-webkit-scrollbar {
     grid-area: content;
     margin: 10px;
     background-color: #EADECE;
-    border-radius: 15px;
+    border-radius: 10px;
     overflow: scroll;
     overflow-x: hidden;
 }
-.content::-webkit-scrollbar-thumb {
+::-webkit-scrollbar {
+    width: 10px;
+  }
+::-webkit-scrollbar-track {
+    background: none;
+}
+::-webkit-scrollbar-thumb {
     background-color: #d4c2aa;
     border-radius: 10px;
-    border: 3px solid #ffffff;
 }
-.content::-webkit-scrollbar-track {
-    background: none;
+::-webkit-scrollbar-thumb:hover {
+    background: #836f68; 
 }
 .footer{
     grid-area: footer;
