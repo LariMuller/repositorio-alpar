@@ -18,7 +18,7 @@ input, textarea, select {
 }
 html, body{
     background-color:#D5815B;
-    min-height: 100svh;
+    height: 100svh;
     width: 100vw;
 }
 body{
@@ -50,9 +50,15 @@ body::-webkit-scrollbar {
     background-color: #EADECE;
     border-radius: 15px;
     overflow: scroll;
+    overflow-x: hidden;
 }
-.content::-webkit-scrollbar {
-    display: none;
+.content::-webkit-scrollbar-thumb {
+    background-color: #d4c2aa;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}
+.content::-webkit-scrollbar-track {
+    background: none;
 }
 .footer{
     grid-area: footer;
