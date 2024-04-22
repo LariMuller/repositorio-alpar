@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    color: #000000;
+}
+html,
+body {
+    background: rgb(6,6,56);
+    background: linear-gradient(0deg, rgba(6,6,56,1) 0%, rgb(15, 41, 117) 45%, rgb(71, 103, 211) 94%);
+    height: 100vh;
+    width: 100vw;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.content{
+    max-width: 600px;
+    width: 80%;
+    height: 80%;
+    padding: 50px;
+    display: grid;
+    grid-template-rows: 30% 70%;
+    gap: 50px;
+}
+header{
+    background-color: rgb(232, 227, 252);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.card-show{
+    background-color: rgb(232, 227, 252);
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+}
+button{
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(14, 14, 133);
+    color: #fff;
+    font-size: 18px;
+}
+input{
+    height: 40px;
+    width: 70%;
+    border-radius: 10px;
+    border: 1px solid #858585;
+    padding: 10px;
+}
+.city, .temp{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 10px;
+}
+.description{
+    margin: 15px;
+    font-size: 20px;
+}
+.min, .max{
+    margin: 15px;
+    font-size: 30px;
+}
