@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={5cce04dff8f75bedeecd08163691d9c5}">
+    <title>Meteorologia</title>
+</head>
+<body>
+    <div class="content">
+        <h1>Previsão do Tempo</h1>
+        <input type="text" id="input-city" placeholder="Digite a cidade desejada:">
+        <button type="button" id="input-btn">Pesquisar</button>
+        <div class="card">
+            <p class="city"></p>
+            <p class="temp"></p>
+            <p class="description"></p>
+            <p class="min"></p>
+            <p class="max"></p>
+
+        </div>
+    </div>
+    <script src="./assets/js/WeatherService.js"></script>
+    <script src="./assets/js/WeatherModel.js"></script>
+    <script src="./assets/js/WeatherView.js"></script>
+    <script src="./assets/js/WeatherController.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
